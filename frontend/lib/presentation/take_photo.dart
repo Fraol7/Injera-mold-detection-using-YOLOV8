@@ -9,6 +9,7 @@ import 'package:image_picker/image_picker.dart';
 import 'package:http/http.dart' as http;
 import 'package:http_parser/http_parser.dart';
 
+import '../constants.dart';
 import 'bottom_navigation_bar.dart';
 import 'home_page.dart';
 
@@ -49,7 +50,7 @@ class _TakePhotoState extends State<TakePhoto> {
       }
       var request = http.MultipartRequest(
         'POST',
-        Uri.parse('http://10.5.192.204:8000/predict'),
+        Uri.parse(url),
       );
 
       request.files.add(
@@ -75,8 +76,7 @@ class _TakePhotoState extends State<TakePhoto> {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     CircularProgressIndicator(),
-                    
-                     Text("Loading"),
+                    Text("Loading"),
                   ],
                 ),
               ),
@@ -185,13 +185,17 @@ class _TakePhotoState extends State<TakePhoto> {
                   ),
                   ElevatedButton(
                     onPressed: () => sendImageToServer(),
+                    style: ButtonStyle(
+                      backgroundColor:
+                          MaterialStateProperty.all<Color>(Colors.blueAccent),
+                    ),
                     child: const Row(
                       children: <Widget>[
-                        Icon(Icons.check),
+                        Icon(Icons.check,color: Colors.white,),
                         SizedBox(
                           width: 4,
                         ),
-                        Text('Check an Image'),
+                        Text('Check an Image', style: TextStyle(color: Colors.white),),
                       ],
                     ),
                   ),
@@ -201,26 +205,26 @@ class _TakePhotoState extends State<TakePhoto> {
           ),
         ],
       ),
-  //     bottomNavigationBar: BottomNavigationBarPart(
-  //       key: UniqueKey(),
-  //   onTap: (index) {
-  //     switch (index) {
-  //       case 0:
-  //         Navigator.pushReplacement(
-  //           context,
-  //           MaterialPageRoute(builder: (context) => const MyHomePage()),
-  //         );
-  //         break;
-  //       case 1:
-  //         Navigator.pushReplacement(
-  //           context,
-  //           MaterialPageRoute(builder: (context) => TakePhoto()),
-  //         );
-  //         break;
-  //       // Add more cases here for other pages
-  //     }
-  //   },
-  // ),
+      //     bottomNavigationBar: BottomNavigationBarPart(
+      //       key: UniqueKey(),
+      //   onTap: (index) {
+      //     switch (index) {
+      //       case 0:
+      //         Navigator.pushReplacement(
+      //           context,
+      //           MaterialPageRoute(builder: (context) => const MyHomePage()),
+      //         );
+      //         break;
+      //       case 1:
+      //         Navigator.pushReplacement(
+      //           context,
+      //           MaterialPageRoute(builder: (context) => TakePhoto()),
+      //         );
+      //         break;
+      //       // Add more cases here for other pages
+      //     }
+      //   },
+      // ),
     );
   }
 }
