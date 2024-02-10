@@ -1,0 +1,6 @@
+/.dist
+/list of tasks.txt
+/new.png
+/venv
+**/__pycache__/
+**/build/
