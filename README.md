@@ -140,10 +140,13 @@ Contact:
 For support or inquiries, you can reach out to us through the following channels:
 
 - Email: [abrham.wendmeneh.a@gmail.com](mailto:abrham.wendmeneh.a@gmail.com)
-- GitHub: [AbrhamWendmeneh](https://github.com//AbrhamWendmeneh//)
+- GitHub: [AbrhamWendmeneh](https://github.com//AbrhamWendmeneh)
 
 - Email: [fraolmulugeta17@gmail.com](mailto:fraolmulugeta17@gmail.com)
-- GitHub: [Fraol7](https://github.com//Fraol7//)
+- GitHub: [Fraol7](https://github.com//Fraol7)
+
+- Email: [kidusshun@gmail.com](mailto:kidusshun@gmail.com)
+- GitHub: [kidusshun](https://github.com/kidusshun)
 
 We are here to assist you and address any questions or concerns you may have regarding the Injera Mold Detection App. Don't hesitate to reach out!
 
