@@ -1,4 +1,4 @@
-# injera-mold-detection
+# Injera-mold-detection
 
 
 Description:
